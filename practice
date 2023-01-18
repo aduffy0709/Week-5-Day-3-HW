@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class Practice {
+
+	public static void main(String[] args) {
+		Object system;
+		//Week 5 homework 
+		Scanner userInput = new Scanner(System.in);
+		
+		Scanner YesNo = new Scanner(System.in);
+        
+		System.out.println("Do you have a dog? ");
+        String yesno = YesNo.next();
+        
+        if(yesno.equals("yes")) {
+        	String dog = userInput.nextLine();
+            System.out.println("What is their name?");
+            String name = userInput.nextLine();
+            System.out.println("What kind of dog do you have? ");
+            String dog2 = userInput.nextLine();
+            System.out.println("What does your dog like to do? ");
+            String activity = userInput.nextLine();
+            System.out.println("Where does your dog like to go? ");
+            String place = userInput.nextLine();
+        	
+        }
+        
+        else if(yesno.equals("no")) {
+        	System.out.println("You should adopt a dog!");
+        }
+           
+	}
+
+}
